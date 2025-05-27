@@ -2,31 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Varun's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to My Portfolio</h1>
+    <h1>Varun Pasunoori</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="projects/project1.html">Projects</a>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>My Projects</h2>
-      <p>Project 1: <a href="projects/project1.html">Cool App</a></p>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="images/Varun.jpg" alt="Profile photo" class="profile-pic">
+      <p>Hello! I'm Varun, a developer passionate about building cool, user-friendly web applications...</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Cool App</strong> – A web app that does amazing things!</li>
+        <li><strong>Weather Dashboard</strong> – Shows real-time weather using APIs.</li>
+        <li><strong>Portfolio Website</strong> – You're looking at it!</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="icons">
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-js-square"></i>
+        <i class="fab fa-git-alt"></i>
+        <i class="fab fa-github"></i>
+        <i class="fas fa-terminal"></i>
+      </div>
     </section>
 
     <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: you@example.com</p>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <footer>
+    <p>Made with ❤️ in India</p>
+  </footer>
 </body>
 </html>
