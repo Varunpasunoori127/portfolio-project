@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,20 +7,8 @@ body {
   background: #fff;
   color: #222;
 }
-.profile-pic {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
 
-.project-img {
-  width: 100%;
-  max-width: 400px;
-  border: 1px solid #ccc;
-  margin-bottom: 0.5rem;
-}
-
-
+/* Header + Navigation */
 header {
   background: #222;
   color: #fff;
@@ -32,35 +21,107 @@ header {
 
 header h1 {
   margin: 0;
+  font-size: 1.8rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 nav a {
   color: #fff;
   margin-left: 1rem;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+/* Main content */
 main {
   padding: 2rem;
 }
 
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Profile image */
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Project image */
+.project-img {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+}
+
+/* Skills icons */
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .icons i {
   font-size: 2rem;
-  margin-right: 1rem;
   color: #444;
+  transition: transform 0.3s;
 }
 
+.icons i:hover {
+  transform: scale(1.2);
+  color: #000;
+}
+
+/* Footer */
 footer {
   background: #f4f4f4;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+
+  .profile-pic {
+    width: 100px;
+  }
+
+  .project-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
 }
