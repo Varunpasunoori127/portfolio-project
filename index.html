@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Varun's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Varun Pasunoori | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
   <header>
     <h1>Varun Pasunoori</h1>
     <nav>
+      <a href="#hero">Home</a>
       <a href="#about">About Me</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
@@ -17,42 +19,75 @@
     </nav>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <img src="Images/Varun.jpg" alt="Profile photo" class="profile-pic">
-      <p>Hello! I'm Varun, a developer passionate about building cool, user-friendly web applications...</p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Cool App</strong> – A web app that does amazing things!</li>
-        <li><strong>Weather Dashboard</strong> – Shows real-time weather using APIs.</li>
-        <li><strong>Portfolio Website</strong> – You're looking at it!</li>
-      </ul>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="icons">
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-css3-alt"></i>
-        <i class="fab fa-js-square"></i>
-        <i class="fab fa-git-alt"></i>
-        <i class="fab fa-github"></i>
-        <i class="fas fa-terminal"></i>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <img src="Images/Varun.jpg" alt="Varun's photo" class="hero-pic" />
+      <div>
+        <h2>Hey, I'm Varun 👋</h2>
+        <p>I build clean, responsive websites and love solving real-world problems with code.</p>
+        <a href="#projects" class="btn">View Projects</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">varunpasunoori6@gmail.com</a></p>
-    </section>
-  </main>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <ul class="about-highlights">
+      <li>💻 Full-stack developer focused on modern web tech</li>
+      <li>🚀 Built 10+ projects using JavaScript, APIs, and Git</li>
+      <li>📚 Currently learning TypeScript & Next.js</li>
+    </ul>
+  </section>
 
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="images/project1.png" alt="Cool App Screenshot" class="project-img" />
+      <h3>Cool App</h3>
+      <p>A web app that does amazing things with modern JS tools.</p>
+      <a href="#" class="btn">Live Demo</a>
+    </div>
+    <div class="project-card">
+      <img src="images/project2.png" alt="Weather Dashboard" class="project-img" />
+      <h3>Weather Dashboard</h3>
+      <p>Uses real-time API data to display weather in any city.</p>
+      <a href="#" class="btn">Live Demo</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="icons">
+      <i class="fab fa-html5"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-js-square"></i>
+      <i class="fab fa-git-alt"></i>
+      <i class="fab fa-github"></i>
+      <i class="fas fa-terminal"></i>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>Made with ❤️ in India</p>
+    <p>Connect with me:</p>
+    <div class="icons">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:you@example.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>Made with ❤️ by Varun</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
