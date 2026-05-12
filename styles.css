@@ -483,9 +483,15 @@ footer {
   .project-content h3 {
     font-size: 1.5rem;
   }
-  nav a.active {
+
+}
+
+/* ACTIVE NAV LINK */
+
+nav a.active {
   color: #38bdf8;
 }
+
 /* =========================
    EXPERIENCE SECTION
 ========================= */
@@ -591,9 +597,7 @@ footer {
   font-weight: bold;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* EXPERIENCE RESPONSIVE */
 
 @media (max-width: 768px) {
 
@@ -601,5 +605,4 @@ footer {
     grid-template-columns: 1fr;
   }
 
-}
 }
